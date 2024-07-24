@@ -1,8 +1,66 @@
+
+#container {
+    margin-top: 100px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 90px;
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+}
+
 .box {
     display: inline;
     padding: 25px;
 }
 
-#container {
-    margin-top: 250px;
+#lemon {
+    animation: lemon 1s;
+    animation-delay: 1s;
+}
+
+@keyframes lemon {
+    0% {transform: scale(100%);}
+    50% {transform: scale(80%);}
+    100% {transform: scale(100%);}
+}
+
+#strawberry {
+    animation: strawberry 1s;
+    animation-delay: 3s;
+}
+
+@keyframes strawberry {
+    0% {transform: scale(100%) rotate(0deg);}
+    25% {transform: rotate(5deg);}
+    50% {transform: scale(80%);}
+    75% {transform: rotate(-5deg);}
+    100% {transform: scale(100%) rotate(0deg);}
+}
+
+#ogrinal {
+    animation: ogrinal 2s;
+    animation-delay: 5s;
+}
+
+@keyframes ogrinal {
+    25% {transform: rotate(-100deg);}
+    75% {transform: rotate(100deg);}
+}
+
+#peach {
+    animation: peach 1s;
+    animation-delay: 7s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+
+@keyframes peach {
+    0% {transform: scale(100%);}
+    50% {transform: rotate(-10deg);}
+    100% {transform: scale(80%);}
 }
